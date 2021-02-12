@@ -26,7 +26,7 @@ if [[ $IMAGE_DEV_ID == "" ]]; then
 fi
 
 # Add xhost
-xhost + 127.0.0.1
+xhost +local:docker
 
 # Check if container exists is running or if needs to be restarted
 CONTAINER_DEV="riscv_console_run"
